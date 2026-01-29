@@ -69,4 +69,4 @@
 ## 2. Missing Value Analysis
   In this dataset, there are no missing values.
 
- ![Missing Value Count Plot](../images/Missingness_count.png)
+ <img src="../images/Missingness_count.png" alt="Missing Value Count Plot" width="800">
