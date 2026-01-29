@@ -69,4 +69,4 @@
 ## 2. Missing Value Analysis
   In this dataset, there are no missing values.
 
- <img src="https://github.com/biswas-bit/Anamoly-Detection/tree/main/report/images" alt="Missing Value Count Plot" width="800">
+ <img src="../report/images/Missingness_count.png" alt="Missing Value Count Plot" width="800">
