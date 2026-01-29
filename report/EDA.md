@@ -51,3 +51,15 @@
 ---
  # Interpretation
  The descriptive statistics of the dataset, comprising 494,020 network connection records, reveal a highly skewed and sparse data distribution typical of real-world network traffic. Most continuous features such as duration, source bytes, and destination bytes exhibit strong right-skewness, where mean values are significantly higher than medians due to the presence of extreme outliers. A large number of features have median values of zero, indicating that many security-related events (e.g., failed logins, urgent packets, privilege escalation attempts) occur infrequently. Several binary and rate-based features show values concentrated at 0 or 1, highlighting their effectiveness as indicators of anomalous behavior. Host-based traffic features frequently reach their upper limits, suggesting repeated connections to the same host or service, a pattern often associated with probing or denial-of-service activities. Additionally, some attributes display zero variance and provide no discriminative information, emphasizing the need for careful feature selection and preprocessing before model training.
+
+# categorical
+
+| Feature        | Count  | Unique | Top    | Freq   |
+|---------------|--------|--------|--------|--------|
+| protocol_type | 494020 | 3      | icmp   | 283602 |
+| service       | 494020 | 66     | ecr_i  | 281400 |
+| flag          | 494020 | 11     | SF     | 378439 |
+| label         | 494020 | 23     | smurf  | 280790 |
+
+ # Interpretation
+ The categorical feature analysis indicates a strong class and traffic-type imbalance within the dataset. The `protocol_type` feature is dominated by ICMP traffic, accounting for more than half of the total observations, which is characteristic of flooding-based attacks. Among the 66 service categories, `ecr_i` appears overwhelmingly frequently, suggesting repetitive exploitation of a specific service. The `flag` feature is heavily concentrated on the `SF` state, indicating that most connections are completed successfully despite malicious intent. Finally, the `label` column shows a pronounced dominance of the `smurf` attack class, confirming that the dataset is highly skewed toward a single denial-of-service attack type. This imbalance has important implications for model training, requiring stratified sampling, resampling techniques, or class-weighted learning to ensure robust and generalizable intrusion detection performance.
