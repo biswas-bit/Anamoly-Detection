@@ -6,7 +6,7 @@
   - **Datatypes:**  protocol_type, service,  flag and label are in str data types. But later we I will eliminate label column.
   - **Duplicate rows:** There are total 348435 duplicated rows. remainning 145585 rows after elimination.
   # Description
-  --
+  ---
   | Feature                         | Count      | Mean       | Std         | Min  | 25%   | 50%   | 75%    | Max          |
 |---------------------------------|------------|------------|------------|------|-------|-------|--------|--------------|
 | duration                        | 494020.0   | 47.9794    | 707.7472   | 0.0  | 0.0   | 0.0   | 0.0    | 58329.0      |
@@ -48,4 +48,4 @@
 | dst_host_rerror_rate                | 494020.0   | 0.058118   | 0.230590   | 0.0  | 0.0   | 0.0   | 0.0    | 1.0          |
 | dst_host_srv_rerror_rate            | 494020.0   | 0.057412   | 0.230141   | 0.0  | 0.0   | 0.0   | 0.0    | 1.0          |
 
---
+---
