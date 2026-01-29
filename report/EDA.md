@@ -66,7 +66,7 @@
 
  ---
 
-## 2.Missing Value Analysis
-In This Dataset there is Not any MIssing value
+## 2. Missing Value Analysis
+  In this dataset, there are no missing values.
 
-![Missing Value Count Plot](../images/Missingness_count.png)
+ ![Missing Value Count Plot](../images/Missingness_count.png)
