@@ -70,3 +70,6 @@
   In this dataset, there are no missing values.
 
  <img src="../report/images/Missingness_count.png" alt="Missing Value Count Plot" width="800">
+
+---
+## 3.Feature Type Identification 
