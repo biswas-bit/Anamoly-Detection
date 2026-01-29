@@ -5,7 +5,7 @@
   - **Shape:** (494020, 42)
   - **Datatypes:**  protocol_type, service,  flag and label are in str data types. But later we I will eliminate label column.
   - **Duplicate rows:** There are total 348435 duplicated rows. remainning 145585 rows after elimination.
-  # Description
+  ### Description
   ---
   | Feature                         | Count      | Mean       | Std         | Min  | 25%   | 50%   | 75%    | Max          |
 |---------------------------------|------------|------------|------------|------|-------|-------|--------|--------------|
@@ -49,10 +49,10 @@
 | dst_host_srv_rerror_rate            | 494020.0   | 0.057412   | 0.230141   | 0.0  | 0.0   | 0.0   | 0.0    | 1.0          |
 
 ---
- # Interpretation
+ ### Interpretation
  The descriptive statistics of the dataset, comprising 494,020 network connection records, reveal a highly skewed and sparse data distribution typical of real-world network traffic. Most continuous features such as duration, source bytes, and destination bytes exhibit strong right-skewness, where mean values are significantly higher than medians due to the presence of extreme outliers. A large number of features have median values of zero, indicating that many security-related events (e.g., failed logins, urgent packets, privilege escalation attempts) occur infrequently. Several binary and rate-based features show values concentrated at 0 or 1, highlighting their effectiveness as indicators of anomalous behavior. Host-based traffic features frequently reach their upper limits, suggesting repeated connections to the same host or service, a pattern often associated with probing or denial-of-service activities. Additionally, some attributes display zero variance and provide no discriminative information, emphasizing the need for careful feature selection and preprocessing before model training.
 
-# categorical
+### categorical
 
 | Feature        | Count  | Unique | Top    | Freq   |
 |---------------|--------|--------|--------|--------|
