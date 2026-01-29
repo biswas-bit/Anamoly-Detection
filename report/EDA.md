@@ -63,3 +63,5 @@
 
  ### Interpretation
  The categorical feature analysis indicates a strong class and traffic-type imbalance within the dataset. The `protocol_type` feature is dominated by ICMP traffic, accounting for more than half of the total observations, which is characteristic of flooding-based attacks. Among the 66 service categories, `ecr_i` appears overwhelmingly frequently, suggesting repetitive exploitation of a specific service. The `flag` feature is heavily concentrated on the `SF` state, indicating that most connections are completed successfully despite malicious intent. Finally, the `label` column shows a pronounced dominance of the `smurf` attack class, confirming that the dataset is highly skewed toward a single denial-of-service attack type. This imbalance has important implications for model training, requiring stratified sampling, resampling techniques, or class-weighted learning to ensure robust and generalizable intrusion detection performance.
+
+## 2.Missing Value Analysis
