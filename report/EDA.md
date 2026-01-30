@@ -92,3 +92,5 @@ Categorical features in this dataset are nominal, meaning they represent discret
   No additional encoding was applied, as these features were already
   model-compatible and encoding them further would introduce redundancy
   without adding predictive value.
+
+### 3.3 Numerical Feature Handaling
