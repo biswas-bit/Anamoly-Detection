@@ -94,3 +94,14 @@ Categorical features in this dataset are nominal, meaning they represent discret
   without adding predictive value.
 
 ### 3.3 Numerical Feature Handaling
+  #### Group A: Highly Right-Skewed (Flow Features)
+- **Features:** `src_bytes`, `dst_bytes`, `duration`, `num_compromised`, `num_root`  
+- **Observation:** The maximum values are thousands of times larger than the 75th percentile (e.g., `src_bytes` Max: 693M vs 75%: 1,032).  
+- **Recommended Treatment:** Log Transformation (`log(x+1)`).  
+> This is critical for algorithms like One-Class SVM and LOF to prevent distance metrics from being dominated by extreme outliers.
+
+#### Group B: Saturated Counters & Ratios
+- **Features:** `count`, `srv_count`, `serror_rate`, `same_srv_rate`, `dst_host_count`  
+- **Observation:** These features are either capped (like `count` at 511) or bounded between 0.0 and 1.0.  
+- **Recommended Treatment:** Robust Scaling.  
+> Log transformation is not applied here; instead, scaling is done based on percentiles to handle high density of values at the upper bounds (e.g., DoS attack clusters).
