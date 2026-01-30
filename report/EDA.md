@@ -86,3 +86,9 @@ Categorical features in this dataset are nominal, meaning they represent discret
 
 
 **Note:** For high-cardinality features like service, Binary Encoding is preferred over One-Hot to prevent the "Curse of Dimensionality," which significantly degrades the performance of distance-based models like **One-Class SVM** and **LOF**.
+
+### 3.2 Binary Feature Handling
+  Binary features were retained in their original 0/1 format.
+  No additional encoding was applied, as these features were already
+  model-compatible and encoding them further would introduce redundancy
+  without adding predictive value.
