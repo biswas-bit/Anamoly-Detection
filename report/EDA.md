@@ -168,5 +168,6 @@ Based on correlation analysis, several features are almost perfectly correlated 
 
 **Rationale:** Removing these features avoids duplication of information, reduces multicollinearity, and ensures distance-based models like LOF and One-Class SVM are not biased by redundant dimensions.
 
+## 5. Outlier Analysis
 
   
