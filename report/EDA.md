@@ -85,4 +85,4 @@ Categorical features in this dataset are nominal, meaning they represent discret
 | service       | 66          | High   | ecr_i, private, http, etc.       | Binary Encoding       |
 
 
-**Note:**For high-cardinality features like service, Binary Encoding is preferred over One-Hot to prevent the "Curse of Dimensionality," which significantly degrades the performance of distance-based models like **One-Class SVM** and **LOF**.
+**Note:** For high-cardinality features like service, Binary Encoding is preferred over One-Hot to prevent the "Curse of Dimensionality," which significantly degrades the performance of distance-based models like **One-Class SVM** and **LOF**.
