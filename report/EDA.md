@@ -153,4 +153,20 @@ Categorical features in this dataset are nominal, meaning they represent discret
 | dst_host_rerror_rate        | srv_rerror_rate                 | 0.982166   |
 | dst_host_same_srv_rate      | dst_host_srv_count              | 0.973685   |
 
+#### Redundant Feature Removal
+
+Based on correlation analysis, several features are almost perfectly correlated (correlation > 0.95), indicating redundancy. To reduce dimensionality and avoid bias in distance-based anomaly detection algorithms (LOF, One-Class SVM), the following features should be dropped:
+
+- `dst_host_srv_serror_rate` (keep `srv_serror_rate`)  
+- `dst_host_serror_rate` (keep `serror_rate`)  
+- `srv_serror_rate` (keep `serror_rate`)  
+- `dst_host_srv_rerror_rate` (keep `srv_rerror_rate`)  
+- `dst_host_srv_rerror_rate` (keep `rerror_rate`)  
+- `dst_host_srv_rerror_rate` (keep `dst_host_rerror_rate`)  
+- `dst_host_rerror_rate` (keep `srv_rerror_rate`)  
+- `dst_host_same_srv_rate` (keep `dst_host_srv_count`)  
+
+**Rationale:** Removing these features avoids duplication of information, reduces multicollinearity, and ensures distance-based models like LOF and One-Class SVM are not biased by redundant dimensions.
+
+
   
