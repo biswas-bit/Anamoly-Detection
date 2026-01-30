@@ -112,7 +112,7 @@ Categorical features in this dataset are nominal, meaning they represent discret
    <img src="../report/images/corelation_matrix.png" alt="Missing Value Count Plot" width="800">
 
    #### Highly correlated feature pairs
-   
+
 | Feature 1                  | Feature 2                     | Correlation |
 |----------------------------|-------------------------------|------------|
 | srv_serror_rate            | dst_host_srv_serror_rate      | 0.999304   |
@@ -139,5 +139,18 @@ Categorical features in this dataset are nominal, meaning they represent discret
 | same_srv_rate              | dst_host_srv_serror_rate      | 0.857544   |
 | srv_serror_rate            | same_srv_rate                 | 0.857060   |
 
+### Redundant Features Based on High Correlation (>0.95)
+
+| Feature to Drop             | Retained Feature                | Correlation |
+|-----------------------------|---------------------------------|------------|
+| dst_host_srv_serror_rate    | srv_serror_rate                 | 0.999304   |
+| dst_host_serror_rate        | serror_rate                     | 0.998673   |
+| srv_serror_rate             | serror_rate                     | 0.998362   |
+| dst_host_rerror_rate        | rerror_rate                     | 0.986995   |
+| dst_host_srv_rerror_rate    | srv_rerror_rate                 | 0.986571   |
+| dst_host_srv_rerror_rate    | rerror_rate                     | 0.985200   |
+| dst_host_srv_rerror_rate    | dst_host_rerror_rate            | 0.984804   |
+| dst_host_rerror_rate        | srv_rerror_rate                 | 0.982166   |
+| dst_host_same_srv_rate      | dst_host_srv_count              | 0.973685   |
 
   
