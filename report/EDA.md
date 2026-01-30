@@ -109,6 +109,35 @@ Categorical features in this dataset are nominal, meaning they represent discret
 
 ## 4.MultiCollinearity & Redundency 
   ### 4.1 Corelation Matrix
-   <img src="../report/images/corelation_matrix.png" alt="Missing Value Count Plot" width="800"> 
+   <img src="../report/images/corelation_matrix.png" alt="Missing Value Count Plot" width="800">
+
+   #### Highly correlated feature pairs
+   
+| Feature 1                  | Feature 2                     | Correlation |
+|----------------------------|-------------------------------|------------|
+| srv_serror_rate            | dst_host_srv_serror_rate      | 0.999304   |
+| serror_rate                | dst_host_serror_rate          | 0.998673   |
+| serror_rate                | srv_serror_rate               | 0.998362   |
+| dst_host_serror_rate       | dst_host_srv_serror_rate      | 0.998156   |
+| serror_rate                | dst_host_srv_serror_rate      | 0.997849   |
+| srv_serror_rate            | dst_host_serror_rate          | 0.997835   |
+| rerror_rate                | srv_rerror_rate               | 0.994731   |
+| lnum_compromised           | lnum_root                     | 0.993828   |
+| rerror_rate                | dst_host_rerror_rate          | 0.986995   |
+| srv_rerror_rate            | dst_host_srv_rerror_rate      | 0.986571   |
+| rerror_rate                | dst_host_srv_rerror_rate      | 0.985200   |
+| dst_host_rerror_rate       | dst_host_srv_rerror_rate      | 0.984804   |
+| srv_rerror_rate            | dst_host_rerror_rate           | 0.982166   |
+| dst_host_srv_count         | dst_host_same_srv_rate        | 0.973685   |
+| srv_count                  | dst_host_same_src_port_rate   | 0.944926   |
+| count                      | srv_count                     | 0.943667   |
+| same_srv_rate              | dst_host_same_srv_rate        | 0.927813   |
+| same_srv_rate              | dst_host_srv_count            | 0.898960   |
+| count                      | dst_host_same_src_port_rate   | 0.860578   |
+| serror_rate                | same_srv_rate                 | 0.858247   |
+| same_srv_rate              | dst_host_serror_rate          | 0.857835   |
+| same_srv_rate              | dst_host_srv_serror_rate      | 0.857544   |
+| srv_serror_rate            | same_srv_rate                 | 0.857060   |
+
 
   
