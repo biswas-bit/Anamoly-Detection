@@ -105,3 +105,10 @@ Categorical features in this dataset are nominal, meaning they represent discret
 - **Observation:** These features are either capped (like `count` at 511) or bounded between 0.0 and 1.0.  
 - **Recommended Treatment:** Robust Scaling.  
 > Log transformation is not applied here; instead, scaling is done based on percentiles to handle high density of values at the upper bounds (e.g., DoS attack clusters).
+---
+
+## 4.MultiCollinearity & Redundency 
+  ### 4.1 Corelation Matrix
+   <img src="../report/images/corelation_matrix.png" alt="Missing Value Count Plot" width="800"> 
+
+  
