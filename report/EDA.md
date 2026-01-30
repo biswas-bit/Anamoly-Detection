@@ -73,3 +73,15 @@
 
 ---
 ## 3.Feature Type Identification 
+The primary objective of this phase is to categorize each feature based on its data type and statistical properties. Proper identification ensures that the mathematical assumptions of Isolation Forest, One-Class SVM, and LOF are satisfied through appropriate encoding and scaling.
+
+### 3.1 Categorical Feature Classification
+Categorical features in this dataset are nominal, meaning they represent discrete categories with no inherent rank or order. They are classified by their cardinality (the number of unique values):
+
+| Feature Name   | Cardinality | Level  | Identification                  | Recommended Treatment |
+|---------------|-------------|--------|----------------------------------|-----------------------|
+| protocol_type | 3           | Low    | icmp, tcp, udp                   | One-Hot Encoding      |
+| flag          | 11          | Medium | SF, S0, REJ, etc.                | One-Hot Encoding      |
+| service       | 66          | High   | ecr_i, private, http, etc.       | Binary Encoding       |
+
+**Note:**For high-cardinality features like service, Binary Encoding is preferred over One-Hot to prevent the "Curse of Dimensionality," which significantly degrades the performance of distance-based models like **One-Class SVM** and **LOF**.
