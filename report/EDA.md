@@ -170,6 +170,9 @@ Based on correlation analysis, several features are almost perfectly correlated 
 
 ## 5. Outlier Analysis & Domain Validation
   Following the statistical detection of outliers using the Interquartile Range (IQR) method, a Domain Validation was performed to ensure these values align with known network attack patterns (DoS, R2L, U2R, and Probing).
+    <img src="../report/images/outlier.png" alt="Missing Value Count Plot" width="800">
+
+
 
 
   
