@@ -190,6 +190,11 @@ Features like num_failed_logins, urgent, and hot showed very few outliers (as lo
   - **Domain validation:**   num_failed_logins: Indicates a Brute Force attempt.
             urgent: Indicates a potential Buffer Overflow or out-of-band attack.
   - **Verdict:** These are Point Anomalies. Despite their low frequency, they are high-priority alerts for targeted system takeovers.
+
+### 5.4 The Saturated Feature Conflict
+We identified 0 outliers for count and srv_count despite their high values.
+ - **Domain Conflict:** In a production environment, a count of 511 (connections in 2 seconds) is a severe anomaly. However, because the KDD '99 dataset is heavily concentrated with attack data, these values have become the "statistical norm."
+ - **Resolution:**  We will rely on One-Class SVM and LOF to detect these as anomalies by looking at density shifts, rather than simple IQR thresholds.
    
 
 
