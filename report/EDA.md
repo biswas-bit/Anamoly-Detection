@@ -173,6 +173,7 @@ Based on correlation analysis, several features are almost perfectly correlated 
     <img src="../report/images/outlier.png" alt="Missing Value Count Plot" width="800">
     
     ### 5.1 Volumetric & Protocal Outliers(DOS/Probing)
+    
     Features such as serror_rate, diff_srv_rate, and srv_serror_rate produced the highest number of outliers (up to 112,000).
 
 
