@@ -168,6 +168,8 @@ Based on correlation analysis, several features are almost perfectly correlated 
 
 **Rationale:** Removing these features avoids duplication of information, reduces multicollinearity, and ensures distance-based models like LOF and One-Class SVM are not biased by redundant dimensions.
 
-## 5. Outlier Analysis
+## 5. Outlier Analysis & Domain Validation
+  Following the statistical detection of outliers using the Interquartile Range (IQR) method, a Domain Validation was performed to ensure these values align with known network attack patterns (DoS, R2L, U2R, and Probing).
+
 
   
