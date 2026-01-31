@@ -182,7 +182,7 @@ Based on correlation analysis, several features are almost perfectly correlated 
   Features like src_bytes and dst_bytes showed fewer, but more extreme, outliers.
   - **Statistical Context:** These exhibit "Long Tail" behavior, where the Max value is millions of times higher than the median.
   - **Domain Validation:** Massive src_bytes relative to the service type (e.g., FTP or Telnet) suggests Data Exfiltration or unauthorized file transfers.
-  - **Verdict:**These are Contextual Outliers. While extreme, they are the primary signals for detecting sensitive data theft.
+  - **Verdict:** These are Contextual Outliers. While extreme, they are the primary signals for detecting sensitive data theft.
 
 
 
