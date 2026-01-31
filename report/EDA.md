@@ -178,6 +178,14 @@ Based on correlation analysis, several features are almost perfectly correlated 
   - **Domain Validation:** A high serror_rate indicates a SYN Flood (Neptune attack), where the attacker initiates connections but never completes the handshake to exhaust server resources.
   - **Verdict:** These are valid security anomalies. They represent high-volume automated attacks.
 
+### 5.2 Data Exfiltration Outliers (R2L)
+  Features like src_bytes and dst_bytes showed fewer, but more extreme, outliers.
+  - **Statistical Context:** These exhibit "Long Tail" behavior, where the Max value is millions of times higher than the median.
+  - **Domain Validation:** Massive src_bytes relative to the service type (e.g., FTP or Telnet) suggests Data Exfiltration or unauthorized file transfers.
+  - **Verdict:**These are Contextual Outliers. While extreme, they are the primary signals for detecting sensitive data theft.
+
+
+
 
 
 
