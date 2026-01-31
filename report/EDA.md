@@ -187,7 +187,7 @@ Based on correlation analysis, several features are almost perfectly correlated 
 ### 5.3 Low and Slow Outliers (U2R/R2L)
 Features like num_failed_logins, urgent, and hot showed very few outliers (as low as 4).
   - **Statistical Context:** These are highly sparse features.
-  - **Domain validation:** * num_failed_logins: Indicates a Brute Force attempt.
+  - **Domain validation:**  * num_failed_logins: Indicates a Brute Force attempt.
             urgent: Indicates a potential Buffer Overflow or out-of-band attack.
   - **Verdict:** These are Point Anomalies. Despite their low frequency, they are high-priority alerts for targeted system takeovers.
    
