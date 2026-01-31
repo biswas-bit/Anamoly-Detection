@@ -196,7 +196,15 @@ We identified 0 outliers for count and srv_count despite their high values.
  - **Domain Conflict:** In a production environment, a count of 511 (connections in 2 seconds) is a severe anomaly. However, because the KDD '99 dataset is heavily concentrated with attack data, these values have become the "statistical norm."
  - **Resolution:**  We will rely on One-Class SVM and LOF to detect these as anomalies by looking at density shifts, rather than simple IQR thresholds.
    
+### 5.5 Domain Validation Summary Table
+ | Feature Group   | Statistical Status        | Security Meaning            | Modeling Action                                      |
+|-----------------|---------------------------|-----------------------------|----------------------------------------------------|
+| Error Rates     | High Frequency Outlier    | SYN Flood / DoS             | Keep; critical for DoS detection                   |
+| Byte Counts     | Extreme Magnitude         | Exfiltration / R2L          | Log transform to normalize scale                   |
+| Login / Urgent  | Sparse / Rare Outlier     | Targeted Hacking            | Critical; do not remove or clip                    |
+| Counters        | Non-Outlier (Saturated)   | High Volume Traffic         | LOF / One-Class SVM for density analysis           |
 
+---
 
 
 
