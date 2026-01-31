@@ -184,6 +184,14 @@ Based on correlation analysis, several features are almost perfectly correlated 
   - **Domain Validation:** Massive src_bytes relative to the service type (e.g., FTP or Telnet) suggests Data Exfiltration or unauthorized file transfers.
   - **Verdict:** These are Contextual Outliers. While extreme, they are the primary signals for detecting sensitive data theft.
 
+### 5.3 Low and Slow Outliers (U2R/R2L)
+Features like num_failed_logins, urgent, and hot showed very few outliers (as low as 4).
+  - **Statistical Context:** These are highly sparse features.
+  - **Domain validation:** * num_failed_logins: Indicates a Brute Force attempt.
+            urgent: Indicates a potential Buffer Overflow or out-of-band attack.
+  - **Verdict:** These are Point Anomalies. Despite their low frequency, they are high-priority alerts for targeted system takeovers.
+   
+
 
 
 
