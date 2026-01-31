@@ -174,6 +174,10 @@ Based on correlation analysis, several features are almost perfectly correlated 
     
 ### 5.1 Volumetric & Protocal Outliers(DOS/Probing)
   Features such as serror_rate, diff_srv_rate, and srv_serror_rate produced the highest number of outliers (up to 112,000).
+  - **Statical Context:** These features are normally distributed near 0.0 in a healthy network.
+  - **Domain Validation:** A high serror_rate indicates a SYN Flood (Neptune attack), where the attacker initiates connections but never completes the handshake to exhaust server resources.
+  - **Verdict:** These are valid security anomalies. They represent high-volume automated attacks.
+
 
 
 
