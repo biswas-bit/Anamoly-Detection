@@ -59,7 +59,9 @@ This triple-consensus acts as a high-probability "Attack List," as the detected 
 ---
 ## 7. PCA Projection
 
+## 7. PCA Projection Comparison
+
 | Isolation Forest (Global Outliers) | One-Class SVM (Boundary) |
-| :--- | :--- |
- | <img src="../images/isololation_forest_cluster.png" alt="Missing Value Count Plot" width="800"> | ![OCSVM PCA](path_to_your_svm_plot.png) |
+| :---: | :---: |
+ |<img src="../images/isolation_forest_cluster.png" alt="Isolation Forest PCA" width="400"> | <img src="../images/ocsvm_cluster.png" alt="One-Class SVM PCA" width="400"> |
 | *Focuses on points that are mathematically "far" from the center.* | *Focuses on points that violate the "shape" of normal traffic.* |
