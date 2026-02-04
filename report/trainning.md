@@ -57,11 +57,10 @@ This triple-consensus acts as a high-probability "Attack List," as the detected 
 3. **Preprocessing:** Retain the `Log1p` transformation, as it successfully minimized the impact of highly skewed network feature distributions.
 
 ---
-## 7. PCA Projection
 
 ## 7. PCA Projection Comparison
 
 | Isolation Forest (Global Outliers) | One-Class SVM (Boundary) |
 | :---: | :---: |
- |<img src="..images/isolation_forest_cluster.png" alt="Isolation Forest PCA" width="400"> | <img src="../images/one_class_svm.png" alt="One-Class SVM PCA" width="400"> |
+ |<img src="../report/images/isolation_forest_cluster.png" alt="Isolation Forest PCA" width="400"> | <img src="../report/images/one_class_svm.png" alt="One-Class SVM PCA" width="400"> |
 | *Focuses on points that are mathematically "far" from the center.* | *Focuses on points that violate the "shape" of normal traffic.* |
