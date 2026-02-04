@@ -64,3 +64,5 @@ This triple-consensus acts as a high-probability "Attack List," as the detected 
 | :---: | :---: |
  |<img src="../report/images/isololation_forest_cluster.png" alt="Isolation Forest PCA" width="400"> | <img src="../report/images/one_class_svm.png" alt="One-Class SVM PCA" width="400"> |
 | *Focuses on points that are mathematically "far" from the center.* | *Focuses on points that violate the "shape" of normal traffic.* |
+
+one-class-svm is capturering outliers better then isolation forest but its trainnig time is High.
