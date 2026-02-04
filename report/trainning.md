@@ -61,5 +61,5 @@ This triple-consensus acts as a high-probability "Attack List," as the detected 
 
 | Isolation Forest (Global Outliers) | One-Class SVM (Boundary) |
 | :--- | :--- |
-| ![IForest PCA](../images/isololation_forest_cluster.png) | ![OCSVM PCA](path_to_your_svm_plot.png) |
+ | <img src="../images/isololation_forest_cluster.png" alt="Missing Value Count Plot" width="800"> | ![OCSVM PCA](path_to_your_svm_plot.png) |
 | *Focuses on points that are mathematically "far" from the center.* | *Focuses on points that violate the "shape" of normal traffic.* |
