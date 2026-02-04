@@ -20,7 +20,7 @@ This project implements an unsupervised machine learning approach to detect netw
 | **Logic Type** | Density-Based | Tree-Based Isolation | Support Vector Boundary |
 | **Training Speed** | Moderate | **Fastest** | **Slowest** |
 | **Memory Usage** | High (Lazy Learner) | Low | Moderate |
-| **Silhouette Score** | **0.11** | *[Insert Score]* | *[Insert Score]* |
+| **Silhouette Score** | **0.11** | **0.56** | **0.63** |
 | **Detection Goal** | Localized deviations | Global outliers/extremes | Violation of "Normal" bubble |
 
 ---
