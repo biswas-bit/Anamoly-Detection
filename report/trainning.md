@@ -55,3 +55,11 @@ This triple-consensus acts as a high-probability "Attack List," as the detected 
 1. **Model Selection:** Deploy the **Isolation Forest** for real-time detection due to its computational efficiency.
 2. **Alert Strategy:** Use the **Decision Function** scores to categorize alerts into "Critical" (Negative scores from 3 models) and "Suspicious" (Negative score from 1 model).
 3. **Preprocessing:** Retain the `Log1p` transformation, as it successfully minimized the impact of highly skewed network feature distributions.
+
+---
+## 7. PCA Projection
+
+| Isolation Forest (Global Outliers) | One-Class SVM (Boundary) |
+| :--- | :--- |
+| ![IForest PCA](../images/isololation_forest_cluster.png) | ![OCSVM PCA](path_to_your_svm_plot.png) |
+| *Focuses on points that are mathematically "far" from the center.* | *Focuses on points that violate the "shape" of normal traffic.* |
