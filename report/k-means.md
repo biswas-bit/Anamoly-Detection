@@ -25,3 +25,11 @@ We identified Cluster 0 as the "Normal Baseline."
  - **Density**: Highest density in the dataset (lowest internal distance).
 
  - **Impact**: It acts as a "Mathematical Black Hole," pulling the global mean toward it and forcing any unique behavior to be measured against its massive density.
+
+ # 5.Final Conclusion
+ The analysis proves that a high Silhouette Score does not equal good Anomaly Detection.
+  - **The Failure:** K-Means is "Greedy." It forced isolated "Orphan" points into the nearest satellite cluster to maintain mathematical cohesion.
+  - **The Result:** We saw zero distinct anomaly separation in the plots because the model prioritized "grouping" over "isolating."
+
+  
+
