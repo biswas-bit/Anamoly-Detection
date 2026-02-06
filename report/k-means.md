@@ -19,3 +19,9 @@ In the full plot, Cluster 0 occupies the dense center. K-Means creates "circular
 
 ### B.Satellite View (Hiding the Giant)
 By removing Cluster 0, we "zoomed in" on the rare traffic. The score increased to 0.5590, proving these small groups are very well-defined. However, the "Orphan" points (true anomalies) were still being absorbed into these blue clusters.
+
+# 4.Forensic Discovery: Cluster 0 (The Traffic Sink)
+We identified Cluster 0 as the "Normal Baseline."
+ - **Density**: Highest density in the dataset (lowest internal distance).
+
+ - **Impact**: It acts as a "Mathematical Black Hole," pulling the global mean toward it and forcing any unique behavior to be measured against its massive density.
